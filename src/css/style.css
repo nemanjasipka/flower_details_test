@@ -294,6 +294,152 @@ body {
     margin: 20px 20px 0px 20px;
     border: 0.5px solid #e8e9ed;
 }
+
+/******* POP UP ******/
+.popup-open{
+    cursor: pointer;
+}
+.close {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 22px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+.label-name{
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #949ea0;
+}
+.label-fill{
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.72;
+  letter-spacing: normal;
+  color: #334144;
+}
+.profile-holder {
+    width: 80px;
+    height: 80px;
+    padding-right: 30px;
+    object-fit: contain;
+  }
+  .Michael-Berry {
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #334144;
+  }
+  .Rectangle-popup{
+    visibility: hidden;
+    width: 600px;
+    height: 610px;
+    border-radius: 3px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    left: 0%;
+    top: 20%;
+    margin: 0 auto;
+    right: 0%;
+  }
+  .info-holder {
+    padding-bottom: 30px;
+}
+  .info-holder h3 {
+    padding-bottom: 15px;
+}
+  .Rectangle-popup .-sightings {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    text-align: left;
+    padding: 0px;
+    letter-spacing: normal;
+    color: #949ea0;
+  }
+  .Rectangle-popup .base {
+    max-width: 50%;
+    margin: 30px auto;
+    border-radius: 3px;
+    box-shadow: 0 15px 20px 0 rgba(234, 168, 159, 0.2);
+    background-image: linear-gradient(to left, #ecbcb3, #eaa79e);
+}
+.profile-container.flex-container {
+    justify-content: flex-start;
+    padding: 80px 0px 40px 0px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.information-holder {
+    margin: 0 auto;
+    max-width: 400px;
+}
+#cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.cover-visible{
+    display: block !important;    
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+
+}
+  .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+ /****************************/
+
 /****** HOVER STATE *****/
 .base:hover {
     background: #d89e96;
