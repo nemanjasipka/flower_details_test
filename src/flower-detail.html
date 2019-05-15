@@ -15,7 +15,7 @@
                 <li>Flowers</li>
                 <li>Latest Sightings</li>
                 <li>Favorites</li>
-                <li>John Doe <img src="img/profile-pic.png" srcset="img/profile-pic@2x.png 2x, img/profile-pic@3x.png 3x" class="profile-pic"></li>
+                <li class="popup-open" onclick="myFunction()">John Doe <img src="img/profile-pic.png" srcset="img/profile-pic@2x.png 2x, img/profile-pic@3x.png 3x" class="profile-pic"></li>
             </ul>
         </nav>
     </header>
@@ -130,5 +130,37 @@
             </div>
         </section>
     </main>
+     <div id="cover"></div>
+    <div class="Rectangle-popup" id="myPopup">
+        
+        <a href="#" class="close" onclick="myFunction()"></a>
+        <div class="profile-container flex-container">
+                <img src="img/profile-holder.png" srcset="img/profile-holder@2x.png 2x, img/profile-holder@3x.png 3x" class="profile-holder">
+                <div>
+                    <h1 class="Michael-Berry">Michael Berry</h1>
+                    <h2 class="-sightings">47 sightings</h2>
+                </div>
+        </div>
+        <div class="information-holder">
+            <div class="info-holder">
+                <h3 class="label-name">First Name</h3>
+                <h2 class="label-fill">Michael</h2>
+            </div>
+            <div class="info-holder">
+                <h3 class="label-name">Last Name</h3>
+                <h2 class="label-fill">Berry</h2>
+            </div>
+            <div class="info-holder">
+                <h3 class="label-name">Date of Birth</h3>
+                <h2 class="label-fill">May 20, 1980</h2>
+            </div>
+            <div class="info-holder">
+                <h3 class="label-name">Email Address</h3>
+                <h2 class="label-fill">michael.berry@gmail.com</h2>
+            </div>
+            <div class="base"><a href="" class="Create-Account">Logout</a></div>
+        </div>
+    </div>
+    <script src="js/popup.js"></script>
 </body>
 </html>
