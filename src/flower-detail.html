@@ -10,7 +10,27 @@
 <body>
     <header class="flex-container Rectangle-3">  
         <div class="logo-container"><img src="img/pl-logo.png" srcset="img/pl-logo@2x.png 2x, img/pl-logo@3x.png 3x" class="pl-logo"></div>
-        <nav class="navbar">
+        <div class="mobile-navigation">
+            <input id="burger" type="checkbox" />
+    
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+    
+            <nav class="navbar">    
+                <ul class="flex-container">
+                    <li><a href="#">Flowers</a></li>
+                    <li><a href="#">Latest Sightings</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li class="popup-open" onclick="myFunction()">John Doe <img src="img/profile-pic.png" srcset="img/profile-pic@2x.png 2x, img/profile-pic@3x.png 3x" class="profile-pic"></li>
+                </ul>  
+            </nav>
+        </div>
+
+        <nav class="navbar desktop">
             <ul class="flex-container">
                 <li>Flowers</li>
                 <li>Latest Sightings</li>
@@ -24,7 +44,7 @@
             <img src="img/pl-image.png" srcset="img/pl-image@2x.png 2x, img/pl-image@3x.png 3x" class="pl-image">
             <div class="headlines">
                 <div class="flex-container">
-                    <img src="img/star-white.png" srcset="img/star-white@2x.png 2x, img/star-white@3x.png 3x" class="star-white">
+                    <img src="img/star-white.png" srcset="img/star-white-mobile@2x.png 2x, img/star-white-mobile@3x.png 3x" class="star-white">
                     <div class="Rectangle-1"><p class="-sightings">127 sightings</p></div>
                 </div>
                     <h1 class="Balloon-Flower ">Balloon Flower</h1>
@@ -57,10 +77,10 @@
                 <div class="flex-column Rectangle">
                         <div class="location">
                             <div class="Rectangle-2 flex-container"><img src="img/pl-icon-location.png" class="pl-icon-location"> <p class="San-Francisco-US">San Francisco, US</p></div>
-                            <img src="img/pl-image-box.png" srcset="img/pl-image@2x.jpg 2x, img/pl-image@3x.jpg 3x" class="pl-image-box">
+                            <img src="img/pl-image-box.png" srcset="img/pl-image-box@2x.png, img/pl-image-box@3x.png " class="pl-image-box">
                         </div>
                     <div class="flex-container author">
-                        <div><img src="img/avatar.png"srcset="img/avatar@2x.png 2x, img/avatar@3x.png 3x" class="Avatar"></div>
+                        <div><img src="img/avatar.png" srcset="img/avatar@2x.png 2x, img/avatar@3x.png 3x" class="Avatar"></div>
                         <div class="author-box">
                             <h3 class="Balcony-Flower">Balcony Flower</h3>
                             <h4 class="by-Adam-Moore">by Adam Moore</h4>
@@ -76,7 +96,7 @@
                 <div class="flex-column Rectangle">
                     <div class="location">
                         <div class="Rectangle-2 flex-container"><img src="img/pl-icon-location.png" class="pl-icon-location"> <p class="San-Francisco-US">San Francisco, US</p></div>
-                        <img src="img/pl-image-box.png" srcset="img/pl-image@2x.jpg 2x, img/pl-image@3x.jpg 3x" class="pl-image-box">
+                        <img src="img/pl-image-box.png" srcset="img/pl-image-box@2x.png, img/pl-image-box@3x.png" class="pl-image-box">
                     </div>
                     <div class="flex-container author">
                         <div><img src="img/avatar.png"srcset="img/avatar@2x.png 2x, img/avatar@3x.png 3x" class="Avatar"></div>
@@ -94,7 +114,7 @@
                 <div class="flex-column Rectangle">
                         <div class="location">
                             <div class="Rectangle-2 flex-container"><img src="img/pl-icon-location.png" class="pl-icon-location"> <p class="San-Francisco-US">San Francisco, US</p></div>
-                            <img src="img/pl-image-box.png" srcset="img/pl-image@2x.jpg 2x, img/pl-image@3x.jpg 3x" class="pl-image-box">
+                            <img src="img/pl-image-box.png" srcset="img/pl-image-box@2x.png, img/pl-image-box@3x.png" class="pl-image-box">
                         </div>
                     <div class="flex-container author">
                         <div><img src="img/avatar.png"srcset="img/avatar@2x.png 2x, img/avatar@3x.png 3x" class="Avatar"></div>
@@ -112,7 +132,7 @@
                 <div class="flex-column Rectangle">
                         <div class="location">
                             <div class="Rectangle-2 flex-container"><img src="img/pl-icon-location.png" class="pl-icon-location"> <p class="San-Francisco-US">San Francisco, US</p></div>
-                            <img src="img/pl-image-box.png" srcset="img/pl-image@2x.jpg 2x, img/pl-image@3x.jpg 3x" class="pl-image-box">
+                            <img src="img/pl-image-box.png" srcset="img/pl-image-box@2x.png, img/pl-image-box@3x.png" class="pl-image-box">
                         </div>
                     <div class="flex-container author">
                         <div><img src="img/avatar.png"srcset="img/avatar@2x.png 2x, img/avatar@3x.png 3x" class="Avatar"></div>
@@ -130,7 +150,7 @@
             </div>
         </section>
     </main>
-     <div id="cover"></div>
+    <div id="cover"></div>
     <div class="Rectangle-popup" id="myPopup">
         
         <a href="#" class="close" onclick="myFunction()"></a>
